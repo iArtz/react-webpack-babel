@@ -1,6 +1,6 @@
 import React from 'react'
 
-const post = ({ post: { title, body } }) => {
+const Post = ({ post: { title, body } }) => {
   return (
     <>
       <p>{title}</p>
@@ -9,4 +9,4 @@ const post = ({ post: { title, body } }) => {
   )
 }
 
-export default post
+export default Post

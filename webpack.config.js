@@ -7,6 +7,7 @@ module.exports = {
   },
   devServer: {
     contentBase: './build',
+    host: '0.0.0.0',
   },
   devtool: 'eval-source-map',
   mode: 'development',
@@ -14,7 +15,7 @@ module.exports = {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        exclude: /node_module/,
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
